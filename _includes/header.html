@@ -1,0 +1,52 @@
+<header>
+	<div class="modal fade" id="donation-modal" tabindex="-1" role="dialog" aria-labelledby="donation-modal" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Spenden</h4>
+	      </div>
+	      <div class="modal-body text-center">
+	    	<div>
+	    		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick" />
+					<input type="hidden" name="hosted_button_id" value="BPJGDVEJJAL5E" />
+					<input id="donation-btn" type="submit" class="btn btn-primary btn-xl" value="Spenden via PayPal oder Kreditkarte" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Spenden mit dem PayPal-Button" />
+					<img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+	    	</div>  
+	    	<hr>
+	    	<div class="color-black">
+	    		<h3>Spenden via Banküberweisung:</h3>
+	    		<h5>Empfänger: Reiner Meutsch Stiftung Fly & Help</h5>
+	    		<h5>IBAN: DE 94 5739 1800 0000 0055 50</h5>
+	    		<h5>BIC: GENODE51WW1</h5>
+				<h5>Verwendungszweck 1: TanSAARnia</h5>
+				<h5>Verwendungszweck 2: Adresse des Spenders</h5>
+				<h5>(Die Adresse des Spenders wird benötigt, damit eine Spendenbescheinigung ausgestellt werden kann)</h5>
+				<h5>Ab einer Spende von über 50€ gibt es eine Spendenquittung.</h5>
+	    	</div>
+	      </div>
+	      <div class="clearfix"></div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<section id="home">
+	    <div class="header-content">
+	        <div class="header-content-inner">
+	        	<img src="img/logo.png" width="250">
+	        	<div class="slogan-text text-center">
+		            <h1 class="text-primary first">KULTURELLE BILDUNG</h1>
+		            <h1 class="second">IST ZUKUNFT</h1>
+		        </div>
+		        <div class="donate-wrapper">
+		            <h3>Spenden:</h3><h1 id="donation-counter" class="text-primary"></h1>
+		            <button id="donation-btn" type="submit" class="btn btn-primary btn-xl" value="Jetzt Spenden" data-toggle="modal" data-target="donation-modal" onclick="$('#donation-modal').modal('show');">Jetzt Spenden</button>
+				</div>
+	        </div>
+	    </div>
+	</section>
+</header>
