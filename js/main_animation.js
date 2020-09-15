@@ -1,6 +1,7 @@
----
----
-var donations = "4387";
+window.donations = "7984";
+$(document).ready(function() {
+    $('#donation-counter').text(window.donations + " €");
+});
 /*
 $(document).ready(function(){
     const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
