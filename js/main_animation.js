@@ -1,4 +1,4 @@
-window.donations = "10.294";
+window.donations = "10.591";
 $(document).ready(function() {
     $('#donation-counter').text(window.donations + " €");
 });
