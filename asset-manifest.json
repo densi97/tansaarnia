@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tansaarnia/static/css/main.b88b9a5b.css",
+    "main.js": "/tansaarnia/static/js/main.c7ea3075.js",
+    "static/media/Flyer_TanSAARnia.pdf": "/tansaarnia/static/media/Flyer_TanSAARnia.37bbe2764262a33c6146.pdf",
+    "static/media/Child.jpg": "/tansaarnia/static/media/Child.f46610c597bb7a550457.jpg",
+    "static/media/P1010800.jpg": "/tansaarnia/static/media/P1010800.2672289413e33c1ff8b2.jpg",
+    "static/media/P1010798.jpg": "/tansaarnia/static/media/P1010798.dbe83198389b158964f5.jpg",
+    "static/media/P1010806.jpg": "/tansaarnia/static/media/P1010806.249662d798b06c86d183.jpg",
+    "static/media/P1010805.jpg": "/tansaarnia/static/media/P1010805.b962c386a81c42ca2104.jpg",
+    "static/media/P1010810.jpg": "/tansaarnia/static/media/P1010810.eb427ca8fccf66a2bf30.jpg",
+    "static/media/P1010808.jpg": "/tansaarnia/static/media/P1010808.146ac06f95b2d53dfe9f.jpg",
+    "static/media/logo.png": "/tansaarnia/static/media/logo.5ad3ce7c7f662934d726.png",
+    "index.html": "/tansaarnia/index.html",
+    "main.b88b9a5b.css.map": "/tansaarnia/static/css/main.b88b9a5b.css.map",
+    "main.c7ea3075.js.map": "/tansaarnia/static/js/main.c7ea3075.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b88b9a5b.css",
+    "static/js/main.c7ea3075.js"
+  ]
+}
