@@ -13,7 +13,7 @@ function Contact() {
       </Container>
 
       <Center>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300" data-aos-offset="200">
+        <div data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
           <Mail size={100} color={theme.primaryColor} />
         </div>
       </Center>
