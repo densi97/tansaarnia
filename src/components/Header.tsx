@@ -10,6 +10,7 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: 'fixed',
     zIndex: 100,
+    maxWidth: "100vw"
   },
 
   dropdown: {

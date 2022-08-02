@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+#root {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 .anchor {
   display: block;
   position: relative;
