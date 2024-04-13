@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.d5420b38.css",
-    "main.js": "/static/js/main.78f7a090.js",
+    "main.js": "/static/js/main.abe09fe5.js",
     "static/media/Flyer_TanSAARnia.pdf": "/static/media/Flyer_TanSAARnia.37bbe2764262a33c6146.pdf",
     "static/media/Child.jpg": "/static/media/Child.f46610c597bb7a550457.jpg",
-    "static/media/P1010800.jpg": "/static/media/P1010800.2672289413e33c1ff8b2.jpg",
     "static/media/P1010798.jpg": "/static/media/P1010798.dbe83198389b158964f5.jpg",
-    "static/media/P1010806.jpg": "/static/media/P1010806.249662d798b06c86d183.jpg",
     "static/media/P1010805.jpg": "/static/media/P1010805.b962c386a81c42ca2104.jpg",
     "static/media/P1010810.jpg": "/static/media/P1010810.eb427ca8fccf66a2bf30.jpg",
     "static/media/P1010808.jpg": "/static/media/P1010808.146ac06f95b2d53dfe9f.jpg",
     "static/media/logo.png": "/static/media/logo.5ad3ce7c7f662934d726.png",
+    "static/media/Schulstart1.jpg": "/static/media/Schulstart1.2207e2d63af6d1e8e5b2.jpg",
+    "static/media/Schulstart2.jpg": "/static/media/Schulstart2.a9885e7def8c044ede30.jpg",
     "index.html": "/index.html",
     "main.d5420b38.css.map": "/static/css/main.d5420b38.css.map",
-    "main.78f7a090.js.map": "/static/js/main.78f7a090.js.map"
+    "main.abe09fe5.js.map": "/static/js/main.abe09fe5.js.map"
   },
   "entrypoints": [
     "static/css/main.d5420b38.css",
-    "static/js/main.78f7a090.js"
+    "static/js/main.abe09fe5.js"
   ]
 }
