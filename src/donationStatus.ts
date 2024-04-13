@@ -1,1 +1,1 @@
-export const donationStatus = "18.937";
+export const donationStatus = "41.217";

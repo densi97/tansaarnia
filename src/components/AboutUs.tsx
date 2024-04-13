@@ -7,17 +7,30 @@ function AboutUs() {
 
   const theme = useMantineTheme();
   const [showAllPhases, setshowAllPhases] = useState(false);
+  const donationStatusInt: number = parseInt(donationStatus.replace(".", ""))
 
   useEffect(() => {
-    let progress = new ProgressBar.Circle("#progress-container-1", {
+    let progress1 = new ProgressBar.Circle("#progress-container-1", {
       strokeWidth: 10,
       easing: 'easeInOut',
       color: '#ffffff',
       duration: 1400,
       trailWidth: 2,
     });
-    progress.animate(parseFloat((parseInt(donationStatus.replace(".", "")) / 31000).toFixed(2)));
-    progress.setText((parseFloat((parseInt(donationStatus.replace(".", "")) / 31000).toFixed(2)) * 100).toString() + "%")
+    progress1.animate(1);
+    progress1.setText("100%")
+
+    let progress2 = new ProgressBar.Circle("#progress-container-2", {
+      strokeWidth: 10,
+      easing: 'easeInOut',
+      color: '#ffffff',
+      duration: 1400,
+      trailWidth: 2,
+    });
+    progress2.animate(((donationStatusInt - 31000) / 20000));
+    progress2.setText((parseFloat(((donationStatusInt - 31000) / 20000).toFixed(2)) * 100).toString() + "%")
+
+
   }, []);
 
   return (
@@ -48,27 +61,33 @@ function AboutUs() {
             <b>Phase 1:</b><br />
             Bau von 2 Klassenzimmern (mit Schulbänken) und 1 Lehrerzimmer
             <br />
-            Aktueller Stand: <b>{donationStatus}€</b> / 31.000€
+            Aktueller Stand: 31.000€ / 31.000€
+          </Text>
+        </Grid.Col>
+      </Grid>
+
+      <Grid align={"center"} justify="center" my={20}>
+        <Grid.Col xs={2} offsetXs={1} span={6}>
+          <div id="progress-container-2" className='progress'></div>
+        </Grid.Col>
+        <Grid.Col xs={5} span={6}>
+          <Text color={"white"}>
+            <b>Phase 2:</b><br />
+            Bau von 3 Klassenzimmern und Lieferung von Möbeln (Schreibtische und Tische)
+            <br />
+            Aktueller Stand: <b>{donationStatusInt - 31000}€</b> / 20.000€
           </Text>
         </Grid.Col>
       </Grid>
 
       {!showAllPhases &&
-      <Center pb={40}>
-        <Button variant='light' onClick={() => { setshowAllPhases(true) }}>Weitere Phasen anzeigen</Button>
-      </Center>
+        <Center pb={40}>
+          <Button variant='light' onClick={() => { setshowAllPhases(true) }}>Weitere Phasen anzeigen</Button>
+        </Center>
       }
 
       {showAllPhases &&
         <>
-          <Grid align={"center"} justify="center" my={20}>
-            <Grid.Col span={6}>
-              <Text align='center' color={"white"}>
-                <b>Phase 2:</b><br />
-                Bau von 3 Klassenzimmern und Lieferung von Möbeln (Schreibtische und Tische)
-              </Text>
-            </Grid.Col>
-          </Grid>
 
           <Grid align={"center"} justify="center" my={20}>
             <Grid.Col span={6}>
