@@ -13,17 +13,17 @@ import { showNotification } from '@mantine/notifications';
 import { Check } from 'tabler-icons-react';
 import { CookiesBanner } from './components/CookieBanner';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 
 
-const headerLinks =  [
-  {link: "home", label: "Home"},
-  {link: 'about-us', label: "Über uns"},
-  {link: 'project', label: "Projekt"},
-  {link: 'location', label: "Lage"},
-  {link: 'fotos', label: "Fotos"},
-  {link: 'contact', label: "Kontakt"},
-  {link: 'imprint', label: "Impressum"},
+const headerLinks = [
+  { link: "home", label: "Home" },
+  { link: 'project', label: "Projekt" },
+  { link: 'about-us', label: "Über uns" },
+  { link: 'location', label: "Lage" },
+  { link: 'fotos', label: "Fotos" },
+  { link: 'contact', label: "Kontakt" },
+  { link: 'imprint', label: "Impressum" },
 ]
 
 
@@ -44,7 +44,7 @@ function App() {
           autoClose: false
         });
       }, 1000);
-      
+
     } else if (window.location.pathname.includes("fail")) {
       setTimeout(() => {
         showNotification({
@@ -72,12 +72,12 @@ function App() {
       <AppShell
         padding={0}
         header={<HeaderResponsive links={headerLinks} />}
-        style={{padding: 0}}
+        style={{ padding: 0 }}
       >
         <DonationModal modalOpen={donationModalOpened} setModalOpen={setdonationModalOpened} />
         <HeroContentLeft setModalOpen={setdonationModalOpened} />
-        <AboutUs />
         <Project />
+        <AboutUs />
         <Location />
         <ImageGrid />
         <Contact />

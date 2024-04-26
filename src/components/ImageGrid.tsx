@@ -1,11 +1,11 @@
-import { createStyles, Image, Modal, SimpleGrid, useMantineTheme } from '@mantine/core'
+import { Container, createStyles, Divider, Image, Modal, SimpleGrid, Title, useMantineTheme } from '@mantine/core'
 import React, { useRef, useState } from 'react';
-import img1 from '../assets/img/schule/P1010805.jpg';
-import img2 from '../assets/img/schule/P1010798.jpg';
-import img3 from '../assets/img/schule/P1010808.jpg';
-import img4 from '../assets/img/schule/P1010810.jpg';
-import img5 from '../assets/img/schule/Schulstart2.jpg';
-import img6 from '../assets/img/schule/Schulstart1.jpg';
+import img1 from '../assets/img/schule/progress/PAFU7015.jpg';
+import img2 from '../assets/img/schule/progress/HZEM0714.jpg';
+import img3 from '../assets/img/schule/progress/IMG_7625.jpg';
+import img4 from '../assets/img/schule/progress/IMG_7623.jpg';
+import img5 from '../assets/img/schule/progress/IMG_7622.jpg';
+import img6 from '../assets/img/schule/P1010801.jpg';
 
 import { useModals } from '@mantine/modals';
 
@@ -32,6 +32,11 @@ function ImageGrid() {
   return (
     <div style={{ backgroundColor: theme.colors.lightblue[6] }}>
       <div className='anchor' id='fotos'></div>
+
+      <Container>
+        <Divider pt={10} pb={50} size="lg" color='white' label={<Title order={2} color='white'>Fotos</Title>} labelPosition="center" />
+      </Container>
+
       <SimpleGrid cols={3} pb={20} spacing="xs">
         <div data-aos="zoom-in-right" data-aos-duration="2000">
           <Image src={img1} className={classes.image} onClick={() => { showImage(img1) }}></Image>

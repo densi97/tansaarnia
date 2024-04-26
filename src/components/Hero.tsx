@@ -1,7 +1,7 @@
 import { createStyles, Overlay, Container, Title, Button, Text, Image } from '@mantine/core';
 import ChildImage from '../assets/img/Child.jpg';
 import Logo from '../assets/img/logo.png';
-import { donationStatus } from '../donationStatus';
+import { donationStatus, donationStatus_Independent, donationStatus_Project } from '../donationStatus';
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -18,6 +18,7 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
+    paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl * 6,
     zIndex: 1,
     position: 'relative',
@@ -30,7 +31,7 @@ const useStyles = createStyles((theme) => ({
 
   title1: {
     color: theme.primaryColor,
-    fontSize: 60,
+    fontSize: 40,
     fontWeight: 900,
     lineHeight: 1.1,
 
@@ -47,7 +48,7 @@ const useStyles = createStyles((theme) => ({
 
   title2: {
     color: theme.colors.lightgreen[0],
-    fontSize: 60,
+    fontSize: 40,
     fontWeight: 900,
     lineHeight: 1.1,
 
@@ -110,7 +111,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function HeroContentLeft({setModalOpen}: {setModalOpen: (b: boolean) => void}) {
+export function HeroContentLeft({ setModalOpen }: { setModalOpen: (b: boolean) => void }) {
   const { classes } = useStyles();
 
   return (
@@ -124,16 +125,18 @@ export function HeroContentLeft({setModalOpen}: {setModalOpen: (b: boolean) => v
         <Image src={Logo} className={classes.logo} my={20} />
         <Title className={classes.title1}>KULTURELLE BILDUNG</Title>
         <Title className={classes.title2}>IST ZUKUNFT</Title>
-        <Title order={2} className={classes.description} mt="xl">
-        Aktueller Spendenstand¹:
+        <Title order={3} className={classes.description} mt="xl">
+          Aktueller Spendenstand¹:
         </Title>
         <Text size="xs" color={"white"}>¹Spendenstand wird manuell aktualisiert.</Text>
 
         <Title order={1} className={classes.donationStatus} mt="xl">{donationStatus}€</Title>
 
-        
+        <Text size="sm" color={"white"}>{donationStatus_Independent}€ von unabhängigen Spendern<br />{donationStatus_Project}€ über das Projekt</Text>
 
-        <Button variant="gradient" size="xl" radius="xl" className={classes.control} onClick={() => {setModalOpen(true)}}>
+
+
+        <Button variant="gradient" size="xl" radius="xl" className={classes.control} onClick={() => { setModalOpen(true) }}>
           JETZT SPENDEN
         </Button>
       </Container>
