@@ -1,7 +1,7 @@
 import { createStyles, Overlay, Container, Title, Button, Text, Image } from '@mantine/core';
 import ChildImage from '../assets/img/Child.jpg';
 import Logo from '../assets/img/logo.png';
-import { donationStatus, donationStatus_Independent, donationStatus_Project } from '../donationStatus';
+import { donationStatus, donationStatus_Independent, donationStatus_Project, donationStatus_Used } from '../donationStatus';
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -132,7 +132,7 @@ export function HeroContentLeft({ setModalOpen }: { setModalOpen: (b: boolean) =
 
         <Title order={1} className={classes.donationStatus} mt="xl">{donationStatus}€</Title>
 
-        <Text size="sm" color={"white"}>{donationStatus_Independent}€ von unabhängigen Spendern<br />{donationStatus_Project}€ über das Projekt</Text>
+        <Text size="sm" color={"white"}>{donationStatus_Used}€ bereits eingesetzt:<br />{donationStatus_Independent}€ von unabhängigen Spendern<br />{donationStatus_Project}€ über das Projekt</Text>
 
 
 

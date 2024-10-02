@@ -5,7 +5,8 @@ import img2 from '../assets/img/schule/progress/HZEM0714.jpg';
 import img3 from '../assets/img/schule/progress/IMG_7625.jpg';
 import img4 from '../assets/img/schule/progress/IMG_7623.jpg';
 import img5 from '../assets/img/schule/progress/IMG_7622.jpg';
-import img6 from '../assets/img/schule/P1010801.jpg';
+import img6 from '../assets/img/schule/progress/IMG_8023.jpg';
+
 
 import { useModals } from '@mantine/modals';
 
