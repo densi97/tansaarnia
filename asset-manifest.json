@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d5420b38.css",
-    "main.js": "/static/js/main.ac107431.js",
+    "main.js": "/static/js/main.84e81799.js",
     "static/media/Flyer_TanSAARnia.pdf": "/static/media/Flyer_TanSAARnia.37bbe2764262a33c6146.pdf",
     "static/media/Child.jpg": "/static/media/Child.f46610c597bb7a550457.jpg",
     "static/media/logo.png": "/static/media/logo.5ad3ce7c7f662934d726.png",
@@ -13,10 +13,10 @@
     "static/media/PAFU7015.jpg": "/static/media/PAFU7015.9f380028e6a193946264.jpg",
     "index.html": "/index.html",
     "main.d5420b38.css.map": "/static/css/main.d5420b38.css.map",
-    "main.ac107431.js.map": "/static/js/main.ac107431.js.map"
+    "main.84e81799.js.map": "/static/js/main.84e81799.js.map"
   },
   "entrypoints": [
     "static/css/main.d5420b38.css",
-    "static/js/main.ac107431.js"
+    "static/js/main.84e81799.js"
   ]
 }
