@@ -1,22 +1,38 @@
 {
   "files": {
     "main.css": "/static/css/main.d5420b38.css",
-    "main.js": "/static/js/main.84e81799.js",
-    "static/media/Flyer_TanSAARnia.pdf": "/static/media/Flyer_TanSAARnia.37bbe2764262a33c6146.pdf",
+    "main.js": "/static/js/main.3162c7bd.js",
+    "static/media/Komolo_Oktober_2024_9.jpg": "/static/media/Komolo_Oktober_2024_9.d74f3911e553a0792c9e.jpg",
+    "static/media/Komolo_Oktober_2024_12.jpg": "/static/media/Komolo_Oktober_2024_12.02c1dab76d4152e16aab.jpg",
+    "static/media/Komolo_Oktober_2024_5.jpg": "/static/media/Komolo_Oktober_2024_5.605de1fdcd235f1b7a69.jpg",
+    "static/media/Komolo_Oktober_2024_7.jpg": "/static/media/Komolo_Oktober_2024_7.8e9196f8d30db8ad6ddc.jpg",
+    "static/media/Komolo_Oktober_2024_11.jpg": "/static/media/Komolo_Oktober_2024_11.2089b49e397ac55d84c9.jpg",
+    "static/media/Komolo_Oktober_2024_8.jpg": "/static/media/Komolo_Oktober_2024_8.989ae8a0589f29fb485f.jpg",
+    "static/media/Komolo_Oktober_2024.jpg": "/static/media/Komolo_Oktober_2024.d14061ea62e8ed17f73e.jpg",
+    "static/media/Komolo_Oktober_2024_6.jpg": "/static/media/Komolo_Oktober_2024_6.6dad3c3cd39b14f01a03.jpg",
+    "static/media/Komolo_Oktober_2024_3.jpg": "/static/media/Komolo_Oktober_2024_3.8658b0cf1de49910fae6.jpg",
+    "static/media/Komolo_Oktober_2024_4.jpg": "/static/media/Komolo_Oktober_2024_4.37d530dbfd7680536a12.jpg",
     "static/media/Child.jpg": "/static/media/Child.f46610c597bb7a550457.jpg",
+    "static/media/Komolo_Oktober_2024_10.jpg": "/static/media/Komolo_Oktober_2024_10.79cfc4c094311dd5d214.jpg",
+    "static/media/Komolo_Oktober_2024_2.jpg": "/static/media/Komolo_Oktober_2024_2.8653aa2b412fbb3f5c84.jpg",
+    "static/media/P1010805.jpg": "/static/media/P1010805.b962c386a81c42ca2104.jpg",
+    "static/media/P1010801.jpg": "/static/media/P1010801.39e4e8957daf3c803430.jpg",
+    "static/media/P1010808.jpg": "/static/media/P1010808.146ac06f95b2d53dfe9f.jpg",
     "static/media/logo.png": "/static/media/logo.5ad3ce7c7f662934d726.png",
+    "static/media/fly_and_help_logo-transparent.png": "/static/media/fly_and_help_logo-transparent.f11eddb0728ea29ab28b.png",
     "static/media/IMG_7623.jpg": "/static/media/IMG_7623.9a9acbe3984e005a129b.jpg",
-    "static/media/IMG_8023.jpg": "/static/media/IMG_8023.07579cee3da3c2da7aba.jpg",
+    "static/media/fly_and_help_logo.jpg": "/static/media/fly_and_help_logo.6d60077d0f4885b74e16.jpg",
     "static/media/IMG_7622.jpg": "/static/media/IMG_7622.840d20008214a1cd388b.jpg",
+    "static/media/IMG_7624.jpg": "/static/media/IMG_7624.2549efc6d76d5d743242.jpg",
     "static/media/IMG_7625.jpg": "/static/media/IMG_7625.e54c45dae1598a27339a.jpg",
     "static/media/HZEM0714.jpg": "/static/media/HZEM0714.800467e67988ee99c236.jpg",
     "static/media/PAFU7015.jpg": "/static/media/PAFU7015.9f380028e6a193946264.jpg",
     "index.html": "/index.html",
     "main.d5420b38.css.map": "/static/css/main.d5420b38.css.map",
-    "main.84e81799.js.map": "/static/js/main.84e81799.js.map"
+    "main.3162c7bd.js.map": "/static/js/main.3162c7bd.js.map"
   },
   "entrypoints": [
     "static/css/main.d5420b38.css",
-    "static/js/main.84e81799.js"
+    "static/js/main.3162c7bd.js"
   ]
 }
