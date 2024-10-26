@@ -1,6 +1,7 @@
-import { createStyles, Overlay, Container, Title, Button, Text, Image } from '@mantine/core';
+import { createStyles, Overlay, Container, Title, Button, Text, Image, Group } from '@mantine/core';
 import ChildImage from '../assets/img/Child.jpg';
 import Logo from '../assets/img/logo.png';
+import FlyAndHelpLogo from '../assets/img/fly_and_help_logo-transparent.png';
 import { donationStatus, donationStatus_Independent, donationStatus_Project, donationStatus_Used } from '../donationStatus';
 
 const useStyles = createStyles((theme) => ({
@@ -64,14 +65,14 @@ const useStyles = createStyles((theme) => ({
   },
 
   logo: {
-    width: 350,
+    width: 200,
 
     [theme.fn.smallerThan('sm')]: {
-      width: 200
+      width: 100
     },
 
     [theme.fn.smallerThan('xs')]: {
-      width: 150
+      width: 75
     },
   },
 
@@ -122,7 +123,10 @@ export function HeroContentLeft({ setModalOpen }: { setModalOpen: (b: boolean) =
         zIndex={0}
       />
       <Container className={classes.container}>
-        <Image src={Logo} className={classes.logo} my={20} />
+        <Group>
+          <Image src={Logo} className={classes.logo} my={20} />
+          <Image src={FlyAndHelpLogo} className={classes.logo} my={20} />
+        </Group>
         <Title className={classes.title1}>KULTURELLE BILDUNG</Title>
         <Title className={classes.title2}>IST ZUKUNFT</Title>
         <Title order={3} className={classes.description} mt="xl">
@@ -132,7 +136,7 @@ export function HeroContentLeft({ setModalOpen }: { setModalOpen: (b: boolean) =
 
         <Title order={1} className={classes.donationStatus} mt="xl">{donationStatus}€</Title>
 
-        <Text size="sm" color={"white"}>{donationStatus_Used}€ bereits eingesetzt:<br />{donationStatus_Independent}€ von unabhängigen Spendern<br />{donationStatus_Project}€ über das Projekt</Text>
+        <Text size="sm" color={"white"}>{donationStatus_Used}€ bereits eingesetzt:<br />{donationStatus_Project}€ über das Projekt<br />{donationStatus_Independent}€ von unabhängigen Spendern</Text>
 
 
 

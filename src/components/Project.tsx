@@ -1,4 +1,4 @@
-import { Anchor, Center, Container, Divider, Grid, Text, Title, useMantineTheme } from '@mantine/core'
+import { Anchor, Center, Container, Divider, Grid, Stepper, Text, Title, useMantineTheme } from '@mantine/core'
 import React, { useEffect } from 'react'
 import { Books, CurrencyEuro, FileDownload, Heart, Users } from 'tabler-icons-react'
 // @ts-ignore
@@ -8,74 +8,50 @@ import ProgressBar from 'progressbar.js';
 function Project() {
   const theme = useMantineTheme();
 
-  useEffect(() => {
-    let progress1 = new ProgressBar.Circle("#progress-container-1", {
-      strokeWidth: 10,
-      easing: 'easeInOut',
-      color: '#ffffff',
-      duration: 1400,
-      trailWidth: 2,
-    });
-    progress1.animate(1);
-    progress1.setText("100%")
+  // useEffect(() => {
+  //   let progress1 = new ProgressBar.Circle("#progress-container-1", {
+  //     strokeWidth: 10,
+  //     easing: 'easeInOut',
+  //     color: '#ffffff',
+  //     duration: 1400,
+  //     trailWidth: 2,
+  //   });
+  //   progress1.animate(1);
+  //   progress1.setText("100%")
 
-    let progress2 = new ProgressBar.Circle("#progress-container-2", {
-      strokeWidth: 10,
-      easing: 'easeInOut',
-      color: '#ffffff',
-      duration: 1400,
-      trailWidth: 2,
-    });
-    progress2.animate(0.1);
-    progress2.setText("10%")
-  }, []);
+  //   let progress2 = new ProgressBar.Circle("#progress-container-2", {
+  //     strokeWidth: 10,
+  //     easing: 'easeInOut',
+  //     color: '#ffffff',
+  //     duration: 1400,
+  //     trailWidth: 2,
+  //   });
+  //   progress2.animate(0.1);
+  //   progress2.setText("10%")
+  // }, []);
 
   return (
-    <div style={{ backgroundColor: theme.colors.lightblue[6], paddingBottom: "2rem" }}>
+    <div style={{ backgroundColor: theme.colors.lightblue[6], paddingTop: "2rem", paddingBottom: "2rem" }}>
       <div className='anchor' id='project'></div>
       <Container>
         <Divider py={20} size="lg" color='white' label={<Title order={2} color='white'>Projekt</Title>} labelPosition="center" />
       </Container>
 
-      <Center mt={40} pb={20}>
-        <Title order={3} style={{ color: "white" }}>Hier sehen Sie den Fortschritt des Projektes:</Title>
-      </Center>
-
       <div data-aos="fade-up">
-        <Grid align={"center"} justify="center">
-          <Grid.Col xs={2} offsetXs={1} span={6}>
-            <div id="progress-container-1" className='progress'></div>
-          </Grid.Col>
-          <Grid.Col xs={5} span={6}>
-            <Text color='white'>
-              <b>Bisher ermöglicht:</b><br />
-              <ul>
-                <li>2 Klassenräume mit Lehrerbüro</li>
-                <li>46 Schulbänke für 2 Klassenzimmer</li>
-                <li>1 Toilettenblock</li>
-                <li>2 Tische und Stühle für Lehrer</li>
-              </ul>
-            </Text>
-          </Grid.Col>
-        </Grid>
+        <Container pt={20} pb={60}>
+          <Stepper active={1} orientation='vertical' size={"xl"}>
+            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau einer Satellitenschule in Komolo</Title>} description={<Text color='white'>2 Klassenräumen, 2 Klassenräume mit Lehrerbüro inkl. 46 Schulbänke für 2 Klassenzimmer, 1 Toilettenblock und2 Tische und Stühle für Lehrer.</Text>} />
+            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau von weiteren Klassenzimmern</Title>} description={<Text color='white'>Bau von 3 Klassenzimmern und Lieferung von Möbeln (Schreibtische & Tische).</Text>} />
+            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Renovierung</Title>} description={<Text color='white'>Renovierung von 7 Klassenzimmern und einem Wasser-Tank.</Text>} />
+            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau von Sanitäranlagen</Title>} description={<Text color='white'>Bau eines Toilettenblocks mit 18 Grubenlatrinen.</Text>} />
+            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Regenwassertanks</Title>} description={<Text color='white'>Erneuerung des Regenwassertanks und Installation von Regenrinnen für die Regenwassernutzung.</Text>} />
+          </Stepper>
+        </Container>
       </div>
 
-      <div data-aos="fade-up">
-        <Grid align={"center"} justify="center">
-          <Grid.Col xs={2} offsetXs={1} span={6}>
-            <div id="progress-container-2" className='progress'></div>
-          </Grid.Col>
-          <Grid.Col xs={5} span={6}>
-            <Text color='white'>
-              <b>Nächste Schritte:</b><br />
-              <ul>
-                <li>Aufbau weiterer Klassenzimmer</li>
-                <li>Bau einer Wasseraufbereitungsanlage</li>
-              </ul>
-            </Text>
-          </Grid.Col>
-        </Grid>
-      </div>
+      <Container>
+        <Divider py={20} size="lg" color='white' />
+      </Container>
 
       <Container mt={40} mb={20}>
         <Grid align={"stretch"}>
@@ -122,7 +98,8 @@ function Project() {
             <div data-aos="fade-left">
               <Title mb={10} order={3} style={{ color: "white" }}>Langfristige, nachhaltige Zusammenarbeit</Title>
               <Text color='white'>
-                Wir wollen nicht einmal spenden und diese Menschen dann vergessen. Es ist ein mehrstufiges Vorhaben.
+                Wir wollen nicht einmal spenden und diese Menschen dann vergessen. Es ist ein mehrstufiges, nachhaltiges Vorhaben für mehrere Generationen. <br />Spätestens alle 5 Jahre fragt FLY & HELP einen Statusbericht der Schulprojekte ab und wir erhalten Informationen und Fotos hierzu. Reiner Meutsch besucht zudem viele Projekte unterjährig persönlich mit seinem Reiseleiterteam.
+
               </Text>
             </div>
           </Grid.Col>
@@ -143,7 +120,7 @@ function Project() {
             </div>
           </Grid.Col>
 
-          <Grid.Col xs={3} span={12} my={10}>
+          {/* <Grid.Col xs={3} span={12} my={10}>
             <Center style={{ height: "100%" }}>
               <div data-aos="fade-up">
                 <FileDownload size={100} color={theme.white} />
@@ -159,7 +136,7 @@ function Project() {
                 </Text>
               </div>
             </Anchor>
-          </Grid.Col>
+          </Grid.Col> */}
 
         </Grid>
       </Container>

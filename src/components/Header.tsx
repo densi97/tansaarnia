@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { createStyles, Header, Container, Group, Burger, Paper, Transition, Modal, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Logo from './../assets/img/logo.png';
+import FlyAndHelpLogo from './../assets/img/fly_and_help_logo.jpg';
 import Impressum from './Impressum';
 
 const HEADER_HEIGHT = 80;
@@ -95,15 +96,15 @@ export default function HeaderResponsive({ links }: HeaderResponsiveProps) {
         event.preventDefault();
         setActive(link.link);
         if (link.label === "Impressum") {
-            setimprintModalOpen(true)
+          setimprintModalOpen(true)
         } else {
           if (link.label === "Home") {
             var element = document.body;
           } else {
             var element = document.getElementById(link.link)!;
           }
-          element && element.scrollIntoView({behavior: "smooth", block: 'start'});
-        }  
+          element && element.scrollIntoView({ behavior: "smooth", block: 'start' });
+        }
         close();
       }}
     >
@@ -113,27 +114,29 @@ export default function HeaderResponsive({ links }: HeaderResponsiveProps) {
 
   return (
     <>
-        <Header height={HEADER_HEIGHT} className={classes.root}>
+      <Header height={HEADER_HEIGHT} className={classes.root}>
         <Container className={classes.header}>
-            <img src={Logo} height={HEADER_HEIGHT - 20} />
-            <Group spacing={5} className={classes.links}>
+          <img src={Logo} height={HEADER_HEIGHT - 20} />
+          <Title order={1}>|</Title>
+          <img src={FlyAndHelpLogo} height={HEADER_HEIGHT - 20} />
+          <Group spacing={5} className={classes.links}>
             {items}
-            </Group>
+          </Group>
 
-            <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
+          <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
 
-            <Transition transition="pop-top-right" duration={200} mounted={opened}>
+          <Transition transition="pop-top-right" duration={200} mounted={opened}>
             {(styles) => (
-                <Paper className={classes.dropdown} withBorder style={styles}>
+              <Paper className={classes.dropdown} withBorder style={styles}>
                 {items}
-                </Paper>
+              </Paper>
             )}
-            </Transition>
+          </Transition>
         </Container>
-        </Header>
-        <Modal opened={imprintModalOpen} onClose={() => {setimprintModalOpen(false)}} centered size="xl" title={<Title order={1}>Impressum</Title>}>
-            <Impressum />
-        </Modal>
+      </Header>
+      <Modal opened={imprintModalOpen} onClose={() => { setimprintModalOpen(false) }} centered size="xl" title={<Title order={1}>Impressum</Title>}>
+        <Impressum />
+      </Modal>
     </>
   );
 }

@@ -20,7 +20,7 @@ const headerLinks = [
   { link: "home", label: "Home" },
   { link: 'project', label: "Projekt" },
   { link: 'about-us', label: "Über uns" },
-  { link: 'location', label: "Lage" },
+  // { link: 'location', label: "Lage" },
   { link: 'fotos', label: "Fotos" },
   { link: 'contact', label: "Kontakt" },
   { link: 'imprint', label: "Impressum" },
@@ -78,7 +78,7 @@ function App() {
         <HeroContentLeft setModalOpen={setdonationModalOpened} />
         <Project />
         <AboutUs />
-        <Location />
+        {/* <Location /> */}
         <ImageGrid />
         <Contact />
         <CookiesBanner showCookieBanner={showCookieBanner} setShowCookieBanner={disableCookieBanner} />
