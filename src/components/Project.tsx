@@ -40,9 +40,9 @@ function Project() {
       <div data-aos="fade-up">
         <Container pt={20} pb={60}>
           <Stepper active={1} orientation='vertical' size={"xl"}>
-            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau einer Satellitenschule in Komolo</Title>} description={<Text color='white'>2 Klassenräumen, 2 Klassenräume mit Lehrerbüro inkl. 46 Schulbänke für 2 Klassenzimmer, 1 Toilettenblock und2 Tische und Stühle für Lehrer.</Text>} />
-            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau von weiteren Klassenzimmern</Title>} description={<Text color='white'>Bau von 3 Klassenzimmern und Lieferung von Möbeln (Schreibtische & Tische).</Text>} />
-            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Renovierung</Title>} description={<Text color='white'>Renovierung von 7 Klassenzimmern und einem Wasser-Tank.</Text>} />
+            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau einer Satellitenschule in Komolo</Title>} description={<Text color='white'>Klassenräume mit Lehrerbüro inkl. 46 Schulbänke, einen Toilettenblock und Tische und Stühle für Lehrer.</Text>} />
+            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau von weiteren Klassenzimmern</Title>} description={<Text color='white'>Bau von drei Klassenzimmern und Lieferung von Möbeln (Schreibtische & Tische).</Text>} />
+            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Renovierung</Title>} description={<Text color='white'>Renovierung von sieben Klassenzimmern und einem Wasser-Tank.</Text>} />
             <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau von Sanitäranlagen</Title>} description={<Text color='white'>Bau eines Toilettenblocks mit 18 Grubenlatrinen.</Text>} />
             <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Regenwassertanks</Title>} description={<Text color='white'>Erneuerung des Regenwassertanks und Installation von Regenrinnen für die Regenwassernutzung.</Text>} />
           </Stepper>

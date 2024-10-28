@@ -1,7 +1,7 @@
 import { createStyles, Overlay, Container, Title, Button, Text, Image, Group } from '@mantine/core';
 import ChildImage from '../assets/img/Child.jpg';
 import Logo from '../assets/img/logo.png';
-import FlyAndHelpLogo from '../assets/img/fly_and_help_logo-transparent.png';
+import FlyAndHelpLogo from '../assets/img/fly_and_help_logo.jpg';
 import { donationStatus, donationStatus_Independent, donationStatus_Project, donationStatus_Used } from '../donationStatus';
 
 const useStyles = createStyles((theme) => ({
