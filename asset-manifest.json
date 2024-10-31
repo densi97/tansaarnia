@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d5420b38.css",
-    "main.js": "/static/js/main.b860fb5d.js",
+    "main.js": "/static/js/main.7f1cd0ae.js",
     "static/media/Komolo_Oktober_2024_9.jpg": "/static/media/Komolo_Oktober_2024_9.d74f3911e553a0792c9e.jpg",
     "static/media/Komolo_Oktober_2024_12.jpg": "/static/media/Komolo_Oktober_2024_12.02c1dab76d4152e16aab.jpg",
     "static/media/Komolo_Oktober_2024_5.jpg": "/static/media/Komolo_Oktober_2024_5.605de1fdcd235f1b7a69.jpg",
@@ -15,6 +15,7 @@
     "static/media/Child.jpg": "/static/media/Child.f46610c597bb7a550457.jpg",
     "static/media/Komolo_Oktober_2024_10.jpg": "/static/media/Komolo_Oktober_2024_10.79cfc4c094311dd5d214.jpg",
     "static/media/Komolo_Oktober_2024_2.jpg": "/static/media/Komolo_Oktober_2024_2.8653aa2b412fbb3f5c84.jpg",
+    "static/media/fly_and_help_logo-transparent.png": "/static/media/fly_and_help_logo-transparent.b981e8cca76c02467e84.png",
     "static/media/P1010805.jpg": "/static/media/P1010805.b962c386a81c42ca2104.jpg",
     "static/media/P1010801.jpg": "/static/media/P1010801.39e4e8957daf3c803430.jpg",
     "static/media/P1010808.jpg": "/static/media/P1010808.146ac06f95b2d53dfe9f.jpg",
@@ -28,10 +29,10 @@
     "static/media/PAFU7015.jpg": "/static/media/PAFU7015.9f380028e6a193946264.jpg",
     "index.html": "/index.html",
     "main.d5420b38.css.map": "/static/css/main.d5420b38.css.map",
-    "main.b860fb5d.js.map": "/static/js/main.b860fb5d.js.map"
+    "main.7f1cd0ae.js.map": "/static/js/main.7f1cd0ae.js.map"
   },
   "entrypoints": [
     "static/css/main.d5420b38.css",
-    "static/js/main.b860fb5d.js"
+    "static/js/main.7f1cd0ae.js"
   ]
 }
