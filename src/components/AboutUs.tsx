@@ -21,7 +21,7 @@ function AboutUs() {
           <Text>
             wir, Djam Djoudi, Peter Kurda und Thomas Ludewig, ergreifen die Gelegenheit und erfüllen uns einen schon lange gehegten Herzenswunsch. Wir helfen nachhaltig und unterstützen ein wirklich gutes FLY&HELP-Bildungsprojekt in Komolo, in der Republik Tansania.
             <br /><br />
-            Tatkräftig unterstütz werden wir hierbei von Adi Brittnacher und Fabian Denshorn, der unsere Internetseite gestaltet - ohne dass deren Aufwand in irgendeiner Form in Rechnung gestellt wird.
+            Tatkräftig unterstützt werden wir hierbei von Adi Brittnacher und Fabian Densborn, der unsere Internetseite gestaltet - ohne dass deren Aufwand in irgendeiner Form in Rechnung gestellt wird.
             <br /><br />
             Unser Ziel ist es, die bestehende <b>Schule in Komolo in mehreren Stufen auszubauen</b> – aktuell besuchen 734 Schüler/innen die Grundschule und werden in lediglich 7 Klassenräumen unterrichtet, die hoffnungslos (104 Schüler/innen in einem Klassenraum) überlastet sind – und die Klassengrößen durch den <b>Neubau einer Satellitenschule</b> (ca. 4 km entfernt) zu verkleinern.
             <br /><br />
