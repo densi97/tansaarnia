@@ -39,7 +39,7 @@ function Project() {
           <Stepper active={1} orientation='vertical' size={"xl"}>
             <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau einer Satellitenschule in Komolo</Title>} description={<Text color='white'>Klassenräume mit Lehrerbüro inkl. 46 Schulbänke, einen Toilettenblock und Tische und Stühle für Lehrer.</Text>} />
             <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau von weiteren Klassenzimmern</Title>} description={<Text color='white'>Bau von weiteren Klassenräumen und Lieferung von Möbeln (Schreibtische & Tische).</Text>} />
-            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Renovierung</Title>} description={<Text color='white'>Renovierung von Klassenräumen und einem Wassertank.</Text>} />
+            <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Lehrerhaus</Title>} description={<Text color='white'>Bau eines Lehrerhauses für eine Familie</Text>} />
             <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Bau von Sanitäranlagen</Title>} description={<Text color='white'>Bau eines Toilettenblocks mit Grubenlatrinen.</Text>} />
             <Stepper.Step label={<Title order={3} style={{ color: "white" }}>Regenwassertanks</Title>} description={<Text color='white'>Erneuerung des Regenwassertanks und Installation von Regenrinnen (Regenwassernutzung).</Text>} />
           </Stepper>
